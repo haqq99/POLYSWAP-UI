@@ -5,13 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CryptaGift</title>
-    <link rel="stylesheet" href="style.css">
-  
+    <link rel="stylesheet" href="style.css">  
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="myscripts.js"></script>
 </head>
-<body bgcolor="black">
+<body bgcolor="#161D2F">
     <div class="container min-h-screen px-20 py-5">
         <nav class="flex items-center">
+          <div>
+          <span class="text-2xl font-[Poppins] text-white cursor-pointer">
+            FundFlex
+          </span>
+        </div>
             <ul class="flex-1 text-center">
                 <li class="list-none inline-block px-5"><a href="#" class="no-underline text-white px-2">Collections</a></li>
                 <li class="list-none inline-block px-5"><a href="#" class="no-underline text-white px-2">My NFTs</a></li>
@@ -23,19 +28,23 @@
         <script type="module" src="http://localhost:3000"></script>
 
         <div class="text-center text-white mt-48">
-            <h1 class="text-6xl font-bold">the decentralized<br>NFT marketplace</h1>
-
-        <div class="flex content-center flex-wrap h-48">
-            <div class="w-1/3 p-2">
-              <div class="text-white text-center bg-zinc-950 p-2">Flexible Orders</div>
-            </div>
-            <div class="w-1/3 p-2">
-              <div class="text-white text-center bg-zinc-950 p-2">Just 0.5% Fees</div>
-            </div>
-            <div class="w-1/3 p-2">
-              <div class="text-white text-center bg-zinc-950 p-2">Fully On-Chain</div>
+            <h1 class="text-6xl font-bold">All in One<br>Marketplace For</h1>
+            
+            <div class="inline-block align-baseline mt-4 changing-header">
+              <h1 class="text-6xl font-bold"><span class="changing-text"></span></h1>
             </div>
 
     </div>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <script>
+      var typed = new Typed(".changing-text",{
+        strings: ["Digital Assets","Token Assets"],
+        typeSpeed: 150,
+        backSpeed: 150,
+        loop: true
+      })
+    </script>
+
 </body>
 </html>

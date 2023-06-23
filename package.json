@@ -5,7 +5,8 @@
   "main": "tailwind.config.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npx webpack --config webpack.config.js"
+    "build": "npx webpack --config webpack.config.js",
+    "start": "node server.js"
   },
   "author": "",
   "type": "module",
@@ -20,5 +21,14 @@
   },
   "devDependencies": {
     "webpack-cli": "^5.1.4"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/haqq99/POLYSWAP-UI.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/haqq99/POLYSWAP-UI/issues"
+  },
+  "homepage": "https://github.com/haqq99/POLYSWAP-UI#readme"
 }
